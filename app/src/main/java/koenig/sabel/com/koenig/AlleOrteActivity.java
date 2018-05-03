@@ -57,7 +57,6 @@ public class AlleOrteActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                     if (getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)) {
-
                         if (cam == null) {
                             cam = Camera.open();
                         }
@@ -66,12 +65,9 @@ public class AlleOrteActivity extends AppCompatActivity {
                         cam.setParameters(param);
                         cam.startPreview();
                         initTimer(timeInMilliSec);
-
                     } else {
-
                         Toast.makeText(getApplicationContext(), "keine Foto-LED", Toast.LENGTH_SHORT).show();
                     }
-
                 }
             });
         }
