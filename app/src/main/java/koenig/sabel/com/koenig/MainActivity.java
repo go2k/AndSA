@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 } else {
                     Toast.makeText(MainActivity.this, "Bitte einen Ort eingeben", Toast.LENGTH_LONG).show();
                 }
-                Toast.makeText(MainActivity.this, String.valueOf(ortsListe.size()), Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, String.valueOf(ortsListe.size()), Toast.LENGTH_LONG).show();
             }
         });
 
